@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-app.listen(3000, () => console.log ("Levantando un servidor con Express"));
+let puerto = process.env.PORT || 3000
+app.listen(puerto, () => console.log ("Levantando un servidor con Express"));
 app.get('/', (req, res) => {
     res.sendFile(path.join( __dirname, '/views/home.html'))
 });
