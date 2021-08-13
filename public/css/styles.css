@@ -10,7 +10,7 @@ footer {
   font-weight: 700;
   width:100%;
 }
-.main-header{background-color: yellow;padding:20px;}
+.main-header{background-color: #EAC926;padding:20px;}
 .logo {width:200px}
 .hamburger-button{background-color: blue; color:white;display: block;max-width: 40px;padding: 10px 0;border-radius: 8px;text-align: center;font-size: 17px;margin: auto;}
 .copy-header {font-weight: 400;text-align: center;}
@@ -24,7 +24,7 @@ footer {
 }
 .bottombox{width: 100%; height:20vh;
 	border-top: 1px solid #ebebeb;
-	border-left: 15px; border-bottom:15px; border-right 15px;; box-sizing:border-box;
+	border-left: 15px; border-bottom:15px; border-right: 15px; box-sizing:border-box;margin-top: 0; margin-bottom: 0;
 	}
     .footer-container {
         display: flex;
@@ -91,8 +91,9 @@ footer {
 
 }    
 
-@media (min-width: 1200px){.main-header-top-bar{align-items: center;} .main-navbar{max-width: 1200px;margin: auto;}.copy-header{max-width: none;font-weight: 400; font-size: 22px;}.main-navbar li{margin: 0 10px;}
-.main-navbar a {font-size: 19px;} .main-navbar{margin-top: 30px;}.logo{width: 250px;}
+@media (min-width: 1200px){.main-header-top-bar{align-items: center;max-width: 1200px;} .main-navbar{max-width:1200px;margin: auto;}
+.copy-header{max-width: none;font-weight: 400; font-size: 22px;}.main-navbar li{margin: 0 10px;}
+.main-navbar a {font-size: 19px;} .main-navbar{margin-top: 30px;}.logo{width: 250px;}.left-navbar{justify-content:flex-start;}.right-navbar{justify-content: flex-end;}
 }
 @media (min-width: 768px) {
         .footer-container {
