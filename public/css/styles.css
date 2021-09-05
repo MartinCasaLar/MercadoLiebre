@@ -26,7 +26,11 @@ footer {
   width:100%;
 }
 .main-header{background-color: var(--main-yellow);padding:20px;}
-.logo {width:200px}
+.logo {width:200px; animation: aumentar; animation-duration: 400ms ;}
+
+@keyframes aumentar{0% {transform: scale(1)}; 100% {transform: scale(1.5);}
+}
+
 .search{font-size: 12px;}
 .search-button{font-size: 12px;}
 .hamburger-button{background-color: blue; color:white;display: block;max-width: 40px;padding: 10px 0;border-radius: 8px;text-align: center;font-size: 17px;margin: auto;}
@@ -60,14 +64,26 @@ footer {
     right: 20px ;
     top: 300px ;
   }
+
+
     .discount{width:70%;color:rgb(50, 179, 50);font-size:16px;line-height: 44px;}
     .price{width:30%;font-size: 21px;line-height: 30px;}
     .create-form {padding: 20px 15px;}
     .controlformulario {margin-bottom: 15px;}
     .controlformulario label {font-style: italic; display: block;}
 .control {width: 100%; padding: 8px;}
-.button-form{border-radius: 5px;background-color: green;color: white;padding: 5px 10px}
-    .footer-container {
+.button-form{border-radius: 5px;background-color: green;color: white;padding: 5px 10px;border:none;transition: 1500ms;}
+.button-form:hover{background-color: gold;}
+.button-form1{background-color: black;color: white;border none; border-radius: 5%; align-content: center;width: 100%;display:block;}
+.button-form1:hover{background-color: #0022AA;}
+
+.registro-form{padding: 20px 15px;}
+.registro-form div{margin-bottom: 15px; display: inline-block;width: 70%;}
+
+.labelform{display: block;font-size: 18px;margin-bottom: 15px;font-weight: 400;}
+.label-line{display:block; margin-bottom: 15px; width: 100px;}
+.place-style{width: 100%; display: block;}
+.footer-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -108,23 +124,27 @@ footer {
 
       }
 
+      .footer-icon:hover {background-color: crimson;}
 
-@media (min-width: 360px){.logo{width:100px; margin-top: 5px;display:inline-block;} .search{width:180px;display: inline-block;margin-top: 5px;} u.ui-item img{width: 360px}
+@media (min-width: 360px){.logo{width:100px; margin-top: 5px;display:inline-block;} .search{width:180px;display: inline-block;margin-top: 5px;}
+ u.ui-item img{width: 360px} .bottom-bottombox{display: none;}.ui-item:hover .bottom-bottombox{display: initial;}
+ 
 /*.main-header-top-bar{align-items: flex-start;}.copy-header{align-self: flex-end;}*/
 }
 
 @media (min-width: 768px){.main-header-top-bar{display: flex;justify-content: space-between;} .copy-header{max-width: 350px; text-align:right;font-size: 13px;}
  .hamburger-button{display:none;} .main-navbar{display: inline-flex; justify-content: space-between; margin: auto;width: 100%;} .main-navbar a{font-size: 13px;} 
  .main-navbar ul{display: flex;} .main-navbar li{margin: -5px;} .search{max-width: 270px;display: inline-block; margin-top: 20px;} .ui-item img{width: 300px;} .logo{width: 200px;}
- .truck-icon{top: 300px;}
+ .truck-icon{top: 300px;} .bottom-bottombox{display: none;}.ui-item:hover .bottom-bottombox{display: initial;}
 
 }    
 
 @media (min-width: 1200px){.main-header-top-bar{align-items: center;max-width: 1400px;}.logo{width: 300px;} .search{max-width: 300px;display: inline-flex; margin-top: 7px;font-size: 16px;} .main-navbar{max-width:1400px;margin: auto;}
 .copy-header{max-width: none;font-weight: 300; font-size: 22px;}.main-navbar li{margin: 10 px;} 
 .main-navbar a {font-size: 19px;} .main-navbar{margin-top: 30px;}  .left-navbar{justify-content:flex-start;}.right-navbar{justify-content: flex-end;}
-.truck-icon{top: 252px;}
-.ui-item img{width: 250px;}.price{font-size: 17px;}.discount{font-size: 13px;}
+.truck-icon{top: 300px;}  .truck-icon:hover{transform: rotate(270deg)
+  ;color: red;border: 1px solid red; border-radius: 50%};
+.ui-item img{width: 250px;}.price{font-size: 17px;}.discount{font-size: 13px;} .ui-item:hover .bottom-bottombox{display: initial;}
 }
 
 
@@ -137,6 +157,8 @@ footer {
    
 
 } 
+
+.footer-content2{text-align: center;}
   .footer-content {
       flex: 0 30%;
       box-sizing:border-box;
@@ -156,3 +178,4 @@ footer {
       font-size: 18px;
   }
 }
+.footer-icon:hover {background-color: crimson;}
